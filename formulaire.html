@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulaire avec auto-complétion d'adresse</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2soU0oA0vxhJkG2HoQ6etQrJp9x_e-IM&libraries=places"></script>
+    <script>
+        function initAutocomplete() {
+            var input = document.getElementById('address');
+            var autocomplete = new google.maps.places.Autocomplete(input);
+        }
+    </script>
+</head>
+<body onload="initAutocomplete()">
+    <form>
+        <label for="address">Adresse :</label>
+        <input id="address" type="text" name="address" />
+    </form>
+</body>
+</html>
